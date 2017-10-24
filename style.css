@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+html,
+body {
+    height: 100%;
+}
+@font-face {
+    font-family: 'socicon';
+    src: url('font/socicon.eot');
+    src: url('font/socicon.eot?#iefix') format('embedded-opentype'), url('font/socicon.woff') format('woff'), url('font/socicon.ttf') format('truetype'), url('font/socicon.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    text-transform: initial;
+}
+@font-face {
+    font-family: 'moon';
+    src: url('font/Moon Light.otf');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto-Light'), local('Roboto-Light'), url('font/Roboto-Light.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: local('Roboto-Thin'), local('Roboto-Thin'), url('font/Roboto-Thin.woff2') format('woff2');
+}
+.socicon {
+    font-family: 'socicon' !important;
+}
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: #222;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.menu h1 {
+    margin: 30px;
+    float: left;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.4em;
+    text-transform: uppercase;
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    margin: 30px 15px;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    transition: 0.6s;
+    -webkit-box-sizing: border-box;
+}
+.menu li:last-child {
+    margin-right: 100px;
+}
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.6s;
+    text-align: center;
+}
+.menu li:hover {
+    padding: 0 10px 10px 10px;
+    margin-bottom: -20px;
+    border-bottom: 1px solid #fff;
+    -webkit-box-sizing: border-box;
+}
+.header {
+    width: 100%;
+    height: 100%;
+    display: table;
+    background-image: url('images/header.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.htext {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.htext h1 {
+    font-size: 4em;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);
+}
+.htext h2 {
+    color: #aaa;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    margin-top: -5px;
+}
+.about {
+    width: 100%;
+    height: 300px;
+    background: #343539;
+    background-image: -webkit-radial-gradient(top, circle cover, #343539 0%, #1a1b1f 80%);
+    background-image: -moz-radial-gradient(top, circle cover, #343539 0%, #1a1b1f 80%);
+    background-image: -o-radial-gradient(top, circle cover, #343539 0%, #1a1b1f 80%);
+    background-image: radial-gradient(top, circle cover, #343539 0%, #1a1b1f 80%);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: table;
+}
+.abtxt {
+    display: table-cell;
+    vertical-align: middle;
+}
+.welc {
+    float: left;
+    width: 48%;
+    margin-left: 60px;
+}
+.welc h1 {
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 1.9em;
+    font-weight: 300;
+}
+.welc p {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 1em;
+    margin-top: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #111;
+}
+.services {
+    width: 100%;
+    background-color: #777;
+}
+.services li {
+    width: 25%;
+    margin: 0 -4px 0 0;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    transition: 0.3s;
+    display: inline-block;
+    list-style: none;
+    height: 300px;
+}
+.services span {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.4em;
+}
+.services li:nth-child(1) {
+    background: url('images/bpentest.png') no-repeat center 50px #222;
+}
+.services li:nth-child(2) {
+    background: url('images/bintel.png') no-repeat center 50px #333;
+}
+.services li:nth-child(3) {
+    background: url('images/btrein.png') no-repeat center 50px #444;
+}
+.services li:nth-child(4) {
+    background: url('images/bconcent.png') no-repeat center 50px #555;
+}
+.services li:nth-child(1):hover {
+    background-image: url('images/ppentest.png');
+    background-color: #e7e7e7;
+}
+.services li:nth-child(2):hover {
+    background-image: url('images/pintel.png');
+    background-color: #e7e7e7;
+}
+.services li:nth-child(3):hover {
+    background-image: url('images/ptrein.png');
+    background-color: #e7e7e7;
+}
+.services li:nth-child(4):hover {
+    background-image: url('images/pconcent.png');
+    background-color: #e7e7e7;
+}
+.services a {
+    color: #fff;
+    padding: 220px 0 50px 0;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.services a:hover {
+    transition: 0.3s;
+    color: #000;
+}
+.intel {
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 300px;
+    background-image: url('images/intel.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    display: table;
+}
+.intext {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.intext img {
+    width: 100%;
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+.intext p {
+    width: 600px;
+    margin: 0 auto;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+}
+.intext input[type="button"] {
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    border: 2px solid #fff;
+    margin-top: 20px;
+    transition: 0.3s;
+    font-family: "moon";
+    font-size: 1em;
+    padding: 10px 25px;
+}
+.intext input[type="button"]:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact{
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    font-size: 2em;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #666;
+    font-family: "Roboto", sans-serif;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    background: #1d1d1d;
+    font-size: 1em;
+    padding: 30px;
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer > span {
+    font-size: 1.2em;
+}
+
+.footer ul li {
+    display: inline-block;
+    list-style: none;
+    float: left;
+    margin: 0 10px;
+    background-color: #333;
+    border-radius: 50%;
+    margin-top: -10px;
+}
+.footer a {
+    width: 40px;
+    height: 40px;
+    color: #333;
+    font-size: 1.4em;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding: 8px 5px;
+    color: #555;
+    transition: 0.3s;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer a:hover {
+    color: #fff;
+}
+.footer li:nth-child(1):hover {
+    background-color: #3b5998;
+    transition: 0.3s;
+}
+.footer li:nth-child(2):hover {
+    background-color: #55acee;
+    transition: 0.3s;
+}
+.footer li:nth-child(3):hover {
+    background-color: #cd201f;
+    transition: 0.3s;
+}
+.orgmenu {
+    float: right;
+}
