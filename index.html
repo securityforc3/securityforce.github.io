@@ -1,0 +1,96 @@
+<html>
+<head>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,100' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+</head>
+<body>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js"></script>
+    <script type="text/javascript">
+    	$(function() {
+		    $('a[href*=#]:not([href=#])').click(function() {
+		        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+		            var target = $(this.hash);
+		            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+		            if (target.length) {
+		                $('html,body').animate({
+		                    scrollTop: target.offset().top
+		                }, 800);
+		                return false;
+		            }
+		        }
+		    });
+		});
+    </script>
+    <script type="text/javascript">
+    $(function(){
+	    $(".menu").hide();
+	    var fromBot = $(document).height()-300-$(window).height();
+	        $(window).scroll(function(){
+	            if($(document).scrollTop() < fromBot) {
+	              $(".menu").fadeIn(500);
+	            }else {
+	              $(".menu").fadeOut(500);
+	            }
+	        });
+    });
+    </script>
+    <div class="menu">
+        <h1>Security Force</h1>
+        <div style="float:right;">
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#home">Blog</a></li>
+                <li><a href="#services">Serviços</a></li>
+                <li><a href="#0sec">0SEC</a></li>
+                <li><a href="#cont">Contato</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="header" id="home">
+        <div class="htext">
+            <h1>Security Force</h1>
+            <h2>Empresa dedicada à Segurança Ofensiva</h2>
+        </div>
+    </div>
+    <div class="about">
+        <div class="abtxt">
+            <div class="welc" id="services">
+                <h1>BEM VINDO À SECURITY FORCE</h1>
+                <p> Conheça os nossos serviços de Ethical Hacking, oferecendo testes de segurança evidenciando vulnerabilidades e fragilidades nos sistemas de suas aplicações, redes e infraestrutura de sua compania</p>
+            </div>
+        </div>
+    </div>
+    <div class="services">
+        <ul>
+            <li><a href="#"><span>Teste de Intrusão</span></a></li>
+            <li><a href="#"><span>Inteligência</span></a></li>
+            <li><a href="#"><span>Treinamentos</span></a></li>
+            <li><a href="#"><span>Conscientização</span></a></li>
+        </ul>
+    </div>
+    <div class="intel" id="0sec">
+        <div class="intext">
+            <img src="images/0sec.png">
+            <p>Offensive Security Team @PsiqueLabs</p>
+            <a href="#" target="_blank">
+                <input type="button" value="Saiba mais">
+            </a>
+        </div>
+    </div>
+    <div class="contact" id="cont">
+    	<p>Envie um e-mail: secforce@protonmail.com</p>
+	</div>
+	<div class="footer">
+		<span>Copyrights © 2017 All Rights Reserves by Security Force</span>
+			<div class="orgmenu">
+			<ul>
+				<li><a href="#"><span class="socicon">b</span></a></li>
+				<li><a href="#"><span class="socicon">a</span></a></li>
+				<li><a href="#"><span class="socicon">r</span></a></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
